@@ -1,0 +1,16 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+repositories {
+    jcenter()
+    maven {
+        url 'http://nexus.gluonhq.com/nexus/content/repositories/releases'
+    }
+}
+
+mainClassName = 'com.banxit.Banxit'
+
+dependencies {
+    compile 'com.gluonhq:particle:1.1.3'
+    compile "commons-codec:commons-codec:1.10"
+}
